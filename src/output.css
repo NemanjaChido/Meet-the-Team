@@ -94,7 +94,7 @@
   }
   img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
-    
+    vertical-align: middle;
   }
   img, video {
     max-width: 100%;
@@ -178,17 +178,8 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-1\/12 {
     height: calc(1/12 * 100%);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
   }
   .h-3\/4 {
     height: calc(3/4 * 100%);
@@ -199,26 +190,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/12 {
     width: calc(1/12 * 100%);
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
   .w-3\/4 {
     width: calc(3/4 * 100%);
   }
   .w-screen {
     width: 100vw;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -262,39 +241,26 @@
   .rounded-bl-4xl {
     border-bottom-left-radius: var(--radius-4xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\/resources\/Background_decor\.svg\'\)\] {
-    background-image: url('/resources/Background_decor.svg');
+  .bg-\[url\(\'\.\.\/resources\/Background_decor\.svg\'\)\] {
+    background-image: url('../resources/Background_decor.svg');
   }
-  .bg-\[url\(\'\/resources\/person_1\.png\'\)\] {
-    background-image: url('/resources/person_1.png');
+  .bg-\[url\(\'\.\.\/resources\/person_1\.png\'\)\] {
+    background-image: url('../resources/person_1.png');
   }
-  .bg-\[url\(\'\/resources\/person_2\.png\'\)\] {
-    background-image: url('/resources/person_2.png');
+  .bg-\[url\(\'\.\.\/resources\/person_2\.png\'\)\] {
+    background-image: url('../resources/person_2.png');
   }
-  .bg-\[url\(\'\/resources\/person_3\.png\'\)\] {
-    background-image: url('/resources/person_3.png');
+  .bg-\[url\(\'\.\.\/resources\/person_3\.png\'\)\] {
+    background-image: url('../resources/person_3.png');
   }
-  .bg-\[url\(\'\/resources\/person_4\.png\'\)\] {
-    background-image: url('/resources/person_4.png');
+  .bg-\[url\(\'\.\.\/resources\/person_4\.png\'\)\] {
+    background-image: url('../resources/person_4.png');
   }
-  .bg-\[url\(\'\/resources\/person_5\.png\'\)\] {
-    background-image: url('/resources/person_5.png');
-  }
-  .bg-\[url\(\'resources\/Background_decor\.svg\'\)\] {
-    background-image: url('resources/Background_decor.svg');
-  }
-  .bg-\[url\(\'resources\/person_4\.png\'\)\] {
-    background-image: url('resources/person_4.png');
-  }
-  .bg-\[url\(\'resources\/person_5\.png\'\)\] {
-    background-image: url('resources/person_5.png');
+  .bg-\[url\(\'\.\.\/resources\/person_5\.png\'\)\] {
+    background-image: url('../resources/person_5.png');
   }
   .bg-cover {
     background-size: cover;
@@ -321,13 +287,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .sm\:col-span-3 {
     @media (width >= 40rem) {
@@ -434,26 +393,14 @@
     font-size: clamp(2.3rem, 2.5vw, 3.5rem);
   }
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
