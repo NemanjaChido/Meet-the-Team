@@ -1,4 +1,3 @@
-<!-- Please update value in the {}  -->
 
 <h1 align="center">{Meet the Team} | devChallenges</h1>
 
@@ -12,7 +11,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="{https://nemanjachido.github.io/Meet-the-Team/}">
       Solution
     </a>
     <span> | </span>
