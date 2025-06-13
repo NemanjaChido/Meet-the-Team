@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+    .background-person1 {
+        background-color: #C1B6F8;
+    }
+    .background-person2 {
+        background-color: #EDACD2;
+    }
+    .background-person3 {
+        background-color: #9DC4F8;
+    }
+    .background-person4 {
+        background-color: #F8D8B0;
+    }
+    .background-person5 {
+        background-color: #86E7D4;
+    }
+    .background_5 {
+        background-color: #F3F4F6;
+    }
+
+    /* for paragraphs */
+    .text-size {
+        font-size: clamp(1.2rem, 2vw, 2rem);
+    }
+    .header-size {
+        font-size: clamp(1.8rem, 2vw, 2.5rem);
+    }
+
+    .headed-text-size {
+        font-size: clamp(2.3rem, 2.5vw, 3.5rem);
+    }
+}
